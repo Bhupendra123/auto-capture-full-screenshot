@@ -9,14 +9,12 @@ Angular screenshot in directive for screen capture.
 
 Check out the homepage at [https://weihanchen.github.io/angular-screenshot/](https://weihanchen.github.io/angular-screenshot/)
 
-##Downloaded code from https://github.com/weihanchen/angular-screenshot and added `downloadFullImgUrl` method to auto-capture-full-screenshot. Also fixed some exceptions.
+## Downloaded code from https://github.com/weihanchen/angular-screenshot and added `downloadFullImgUrl` method to auto-capture-full-screenshot. Also fixed some exceptions.
 
 ## Installation
-Get angular screenshot from bower, npm, or git.
+Get angular screenshot from bower.
 ```
-$npm install angular-screenshot
-$bower install angular-screenshot
-$git clone https://github.com/weihanchen/angular-screenshot.git
+$bower install bower install git://github.com/Bhupendra123/auto-capture-full-screenshot.git
 ```
 
 Add dependencies to the section of your index.html
