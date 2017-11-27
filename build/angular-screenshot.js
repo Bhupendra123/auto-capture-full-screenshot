@@ -3486,6 +3486,7 @@ var screenshot = function screenshot() {
 				var elementSelector = getElementSelector();
 				var element = elementSelector[0];
 				var options = getOptions(element);
+				options.height = document.getElementById('ui-view-wrapper').scrollHeight + document.getElementById('main-toolbar').offsetHeight;
 				_domToImage2.default.toPng(element, options).then(function (imageUrl) {
 					if (callback) callback({dataUrl: imageUrl, success: true});
 					resolve(imageUrl);
@@ -3494,7 +3495,7 @@ var screenshot = function screenshot() {
 					if (callback) callback({dataUrl: '', success: false});
 					reject(error);
 				});
-			 });
+			 }, 500);
 		 });
 	  }
 
@@ -3648,7 +3649,7 @@ var screenshot = function screenshot() {
             cancel: cancel,
             download: download,
             downloadFull: downloadFull,
-	    downloadFullImgUrl: downloadFullImgUrl,
+			downloadFullImgUrl: downloadFullImgUrl,
             toPng: toPng
          };
       });
